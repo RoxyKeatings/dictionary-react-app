@@ -20,7 +20,7 @@ export default function Footer() {
         </a>{" "}
         and is hosted by{" "}
         <a
-          href="https://jocular-hamster-cb2243.netlify.app/"
+          href="https://lexicon-react.netlify.app/"
           target="_blank"
           rel="noreferrer">
           Netlify
