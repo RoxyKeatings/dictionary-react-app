@@ -34,12 +34,17 @@ export default function Dictionary() {
       <form onSubmit={handleSubmit}>
         <input
           type="search"
-          placeholder="look up any word.."
+          placeholder="look up a word.."
           autoFocus
           onChange={handleKeywordchange}
           required
+          className="inputForm text-capitalize w-75"
         />
-        <input type="submit" value="search" />
+        <input
+          type="submit"
+          value="search"
+          className="submitBtn text-capitalize w-25"
+        />
       </form>
       <DefinitionResults results={results} />
     </div>

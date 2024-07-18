@@ -1,0 +1,10 @@
+footer {
+  text-align: center;
+  margin-top: 15px;
+}
+footer a {
+  color: #d3626e;
+}
+footer a:hover {
+  color: #e59775;
+}

@@ -1,0 +1,10 @@
+.DefinitionResults {
+  padding: 15px;
+  border-radius: 5px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 200, 124) 0.1%,
+    rgb(252, 251, 121) 90%
+  );
+  opacity: 0.8;
+}

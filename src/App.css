@@ -1,5 +1,15 @@
-body {
-  background-color: #1b1c1e;
-  color: #808080;
-  margin: 50px auto;
+.App {
+  background: linear-gradient(
+    89deg,
+    rgb(253, 220, 155) 26.2%,
+    rgb(255, 215, 165) 48.5%
+  );
+  color: #d3626e;
+  border: 10px solid rgb(253, 220, 155);
+  border-radius: 5px;
+
+  font-family: "Anton", sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px;
 }
