@@ -1,9 +1,19 @@
 import React from "react";
+import Meaning from "./Meaning";
+
 export default function DefinitionResults(props) {
+  console.log(props.results);
   if (props.results) {
     return (
-      <div>
-        <h3>Definition</h3>
+      <div className="DefinitionResults">
+        <h2>{props.results.word}</h2>
+        {props.results.meanings.map(function (meaning, index) {
+          return (
+            <div key={index}>
+              <Meaning meaning={meaning} />
+            </div>
+          );
+        })}
       </div>
     );
   } else {

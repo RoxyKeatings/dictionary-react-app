@@ -5,28 +5,33 @@ import DefinitionResults from "./DefinitionResults";
 
 export default function Dictionary() {
   const [keyword, setKeyword] = useState("");
-  const [definition, setDefinition] = useState(null);
+  const [results, setResults] = useState({});
 
-  function search(event) {
-    event.preventDefault();
-  }
   function handleResponse(response) {
-    setDefinition(response.data);
+    console.log(response.data[0]);
+    setResults(response.data[0]);
   }
-  let apiKey = "89b05tfca20b16d5f5e3c646e1oa37db";
-  // documentation:https://www.shecodes.io/learn/apis/dictionary
-  let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
 
-  axios.get(apiUrl).then(handleResponse);
+  function search() {
+    // documentation:https://api.dictionaryapi.dev/api/v2/entries/en/<word>
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiUrl).then(handleResponse);
+    //documentation:https://www.shecodes.io/learn/apis/dictionary
+    //const apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
+  }
 
   function handleKeywordchange(event) {
     event.preventDefault();
     setKeyword(event.target.value);
   }
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
 
   return (
     <div className="Dictionary">
-      <form onSubmit={search}>
+      <form onSubmit={handleSubmit}>
         <input
           type="search"
           placeholder="look up any word.."
@@ -36,7 +41,7 @@ export default function Dictionary() {
         />
         <input type="submit" value="search" />
       </form>
-      <DefinitionResults results={definition} word={keyword} />
+      <DefinitionResults results={results} word={keyword} />
     </div>
   );
 }
