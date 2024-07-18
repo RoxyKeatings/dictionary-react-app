@@ -5,7 +5,7 @@ import DefinitionResults from "./DefinitionResults";
 
 export default function Dictionary() {
   const [keyword, setKeyword] = useState("");
-  const [results, setResults] = useState({});
+  const [results, setResults] = useState(null);
 
   function handleResponse(response) {
     console.log(response.data[0]);
@@ -41,7 +41,7 @@ export default function Dictionary() {
         />
         <input type="submit" value="search" />
       </form>
-      <DefinitionResults results={results} word={keyword} />
+      <DefinitionResults results={results} />
     </div>
   );
 }
