@@ -7,8 +7,7 @@ export default function Meaning(props) {
       <h3>{props.meaning.partOfSpeech}</h3>
       <h3>
         {props.meaning.synonyms[0]}, {props.meaning.synonyms[1]},
-        {props.meaning.synonyms[2]},{props.meaning.synonyms[3]},
-        {props.meaning.synonyms[4]}
+        {props.meaning.synonyms[2]},{props.meaning.synonyms[3]}
       </h3>
       {props.meaning.definitions.map(function (definition, index) {
         return (

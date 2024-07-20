@@ -1,15 +1,21 @@
 .App {
   background: linear-gradient(
-    89deg,
-    rgb(253, 220, 155) 26.2%,
-    rgb(255, 215, 165) 48.5%
+    110.5deg,
+    rgba(248, 196, 249, 0.66) 22.8%,
+    rgba(253, 122, 4, 0.15) 64.6%
   );
-  color: #d3626e;
-  border: 10px solid rgb(253, 220, 155);
+  color: #ef59eb;
+
   border-radius: 5px;
 
-  font-family: "Anton", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   max-width: 900px;
   margin: 0 auto;
   padding: 15px;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
 }
