@@ -8,9 +8,9 @@ function App() {
     <div className="App">
       <div className="container">
         <Header />
-        <img src={logo} alt="dictionaryappgif" className="logo" />
+        <img src={logo} alt="dictionaryappgif" className="logo img-fluid" />
         <main>
-          <Dictionary defaultKeyword="alchemy" />
+          <Dictionary defaultKeyword="lexicon" />
         </main>
         <Footer />
       </div>

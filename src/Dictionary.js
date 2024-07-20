@@ -36,22 +36,24 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <section>
+          <h4>What word do you want to look up</h4>
           <form onSubmit={handleSubmit}>
             <input
               type="search"
-              autoFocus
+              defaultValue={props.defaultKeyword}
               onChange={handleKeywordchange}
               required
               className="inputForm text-capitalize w-75"
+              autoFocus
             />
             <input
               type="submit"
-              value="Look Up"
-              className="submitBtn text-capitalize w-25"
+              value="🔎"
+              className="submitBtn text-capitalize"
             />
           </form>
           <div className="hint">
-            example keywords: alchemy,developer,inspired,lexicon,
+            example keywords: alchemy,developer,inspired,lexicon...
           </div>
         </section>
         <DefinitionResults results={results} />
