@@ -8,7 +8,6 @@ export default function Dictionary() {
   const [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0]);
     setResults(response.data[0]);
   }
 
@@ -31,20 +30,25 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <form onSubmit={handleSubmit}>
-        <input
-          type="search"
-          autoFocus
-          onChange={handleKeywordchange}
-          required
-          className="inputForm text-capitalize w-75"
-        />
-        <input
-          type="submit"
-          value="Discover"
-          className="submitBtn text-capitalize w-25"
-        />
-      </form>
+      <section>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="search"
+            autoFocus
+            onChange={handleKeywordchange}
+            required
+            className="inputForm text-capitalize w-75"
+          />
+          <input
+            type="submit"
+            value="Discover"
+            className="submitBtn text-capitalize w-25"
+          />
+        </form>
+        <div className="hint">
+          example keywords: lexicon,magic,sunsets,inspired
+        </div>
+      </section>
       <DefinitionResults results={results} />
     </div>
   );

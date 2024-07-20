@@ -1,18 +1,27 @@
-.Dictionary {
-  margin: 0 auto;
+.Dictionary section {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #faf5ff;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 20%);
+  margin: 20px 0;
 }
 form {
   max-width: 100%;
-  margin: 15px;
+  margin: 5px;
 }
 .inputForm {
   padding: 15px;
-  border: none;
+  border: 1px solid #ddd;
   border-radius: 5px;
+  color: #ef59eb;
 }
 .submitBtn {
   border: none;
   border-radius: 5px;
   padding: 15px;
   background-color: #ef59eb;
+}
+.Dictionary .hint {
+  font-size: 14px;
+  margin-top: 5px;
 }
