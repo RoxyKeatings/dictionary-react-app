@@ -61,7 +61,7 @@ export default function Dictionary(props) {
             />
           </form>
           <div className="hint">
-            example keywords: alchemy,developer,inspired,lexicon...
+            example keywords: sunrise,alchemy,developer,inspired,lexicon...
           </div>
         </section>
         <DefinitionResults results={results} />
