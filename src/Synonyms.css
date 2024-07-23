@@ -8,3 +8,7 @@
   color: #126208;
   padding: 10px;
 }
+.Synonyms ul {
+  list-style: none;
+  display: block;
+}

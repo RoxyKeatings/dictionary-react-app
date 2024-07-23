@@ -7,7 +7,7 @@ export default function Antonyms(props) {
   } else {
     return (
       <div className="Antonyms">
-        <h6>antonym(s): {props.antonyms}</h6>
+        <h6>antonym: {props.antonyms}</h6>
       </div>
     );
   }
