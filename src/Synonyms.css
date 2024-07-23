@@ -1,10 +1,10 @@
 .Synonyms {
   margin: 10px 0 0;
   padding: 0;
-  color: #91d6c6;
+  color: #126208;
 }
 .Synonyms li {
   display: inline-block;
+  color: #126208;
   padding: 10px;
-  color: #91d6c6;
 }
