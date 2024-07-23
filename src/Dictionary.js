@@ -11,6 +11,7 @@ export default function Dictionary(props) {
   const [photos, setPhotos] = useState(null);
 
   function handleResponse(response) {
+    console.log(response.data);
     setResults(response.data[0]);
   }
   function handlePexelsResponse(response) {
