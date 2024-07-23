@@ -10,7 +10,7 @@ function App() {
         <Header />
         <img src={logo} alt="dictionaryappgif" className="logo img-fluid" />
         <main>
-          <Dictionary defaultKeyword="lexicon" />
+          <Dictionary defaultKeyword="autumn" />
         </main>
         <Footer />
       </div>
